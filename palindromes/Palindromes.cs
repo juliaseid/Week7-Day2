@@ -4,7 +4,7 @@ using System.Collections.Generic;
 public class Palindrome {
 
   public static bool checkPal(string input){
-    // char[] charArray = input.Split(Char[]);
+    input.Replace(" ", "");
     char[] charArray = input.ToCharArray();
     int j = charArray.Length - 1;
     for (int i=0; i<charArray.Length; i++) {
